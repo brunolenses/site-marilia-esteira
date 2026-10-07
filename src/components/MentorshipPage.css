@@ -8,8 +8,8 @@
   display: flex;
   flex-direction: column;
   padding: 4rem 2rem;
-  background-color: #4B2027;
-  color: #F7F3EC;
+  background-color: #F7F3EC; /* Ivory para a foto misturar perfeitamente */
+  color: #242321;
 }
 
 @media(min-width: 768px) {
@@ -28,24 +28,25 @@
 
 .hero-content h1 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 3rem;
+  font-size: 3.5rem;
   line-height: 1.1;
   margin-bottom: 1.5rem;
+  color: #4B2027; /* Burgundy escuro */
 }
 
 .hero-subtitle {
   font-size: 1.2rem;
-  opacity: 0.9;
+  opacity: 0.8;
   margin-bottom: 2rem;
   line-height: 1.6;
 }
 
 .btn-primary, .btn-primary-large {
   display: inline-block;
-  background-color: #B79A72;
-  color: #242321;
+  background-color: #7A3038; /* Burgundy mais vibrante pro botao */
+  color: #F7F3EC;
   font-weight: 600;
-  padding: 1rem 2rem;
+  padding: 1rem 2.5rem;
   text-decoration: none;
   border-radius: 4px;
   text-transform: uppercase;
@@ -54,25 +55,29 @@
 }
 
 .btn-primary:hover, .btn-primary-large:hover {
-  background-color: #E8DDD0;
+  background-color: #4B2027;
 }
 
 .hero-image-wrapper {
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .hero-image {
-  max-width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-  object-fit: cover;
+  width: 100%;
+  max-width: 450px; /* Reduz o tamanho gigante da foto */
+  height: auto;
+  mix-blend-mode: multiply; /* Faz o fundo branco da foto sumir e misturar com a cor da pagina */
+  filter: contrast(1.05); /* Da um leve realce */
 }
 
+/* Secao Autoridade invertida (escura) */
 .mentorship-about {
   padding: 5rem 2rem;
-  background-color: #E8DDD0;
+  background-color: #4B2027;
+  color: #F7F3EC;
   text-align: center;
 }
 
@@ -81,10 +86,10 @@
   margin: 0 auto;
 }
 
-.about-text h2, .mentorship-program h2, .mentorship-cta h2 {
+.about-text h2 {
   font-family: 'Cormorant Garamond', serif;
   font-size: 2.5rem;
-  color: #7A3038;
+  color: #E8DDD0;
   margin-bottom: 1.5rem;
 }
 
@@ -92,12 +97,20 @@
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 1rem;
+  opacity: 0.9;
 }
 
 .mentorship-program {
   padding: 5rem 2rem;
   text-align: center;
   background-color: #F7F3EC;
+}
+
+.mentorship-program h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  color: #7A3038;
+  margin-bottom: 1.5rem;
 }
 
 .program-grid {
@@ -136,13 +149,16 @@
 
 .mentorship-cta {
   padding: 6rem 2rem;
-  background-color: #4B2027;
-  color: #F7F3EC;
+  background-color: #E8DDD0;
+  color: #242321;
   text-align: center;
 }
 
 .mentorship-cta h2 {
-  color: #E8DDD0;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  color: #4B2027;
+  margin-bottom: 1.5rem;
 }
 
 .mentorship-cta p {
@@ -154,7 +170,7 @@
 .price-tag {
   font-size: 1.5rem !important;
   font-weight: 600;
-  color: #B79A72;
+  color: #7A3038;
   margin-bottom: 3rem !important;
 }
 
