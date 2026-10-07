@@ -56,7 +56,7 @@ const products = [
       pill: "FERRAMENTA",
       price: "R$ 9,90",
       image: capaAnamnese,
-      link: "#kiwify-checkout-link-5"
+      link: "https://pay.cakto.com.br/a363aqv_1181037"
   },
   {
       id: 2,
