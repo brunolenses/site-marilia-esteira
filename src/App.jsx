@@ -47,7 +47,7 @@ const products = [
       pill: "INICIANTE",
       price: "R$ 9,90",
       image: capaEbook2,
-      link: "#kiwify-checkout-link-1"
+      link: "https://pay.cakto.com.br/cfig4ud_1181377"
   },
   {
       id: 5,
@@ -65,7 +65,7 @@ const products = [
       pill: "ESSENCIAL",
       price: "R$ 19,90",
       image: capaProtocolo,
-      link: "#kiwify-checkout-link-2"
+      link: "https://pay.cakto.com.br/3axe3r3_1181392"
   },
   {
       id: 3,
@@ -74,16 +74,17 @@ const products = [
       pill: "AVANÇADO",
       price: "R$ 29,90",
       image: capaEbook1,
-      link: "#kiwify-checkout-link-3"
+      link: "https://pay.cakto.com.br/36qmanm_1181404"
   },
   {
       id: 4,
       title: "Curso Presencial Premium",
+      buttonText: "Agendar Mentoria →",
       description: "Expanda suas técnicas e ofereça diferenciais artísticos na sua região.",
       pill: "FORMAÇÃO PRESENCIAL",
       price: "R$ 1.497,00",
       image: capaEbook3,
-      link: "#kiwify-checkout-link-4"
+      link: "https://wa.me/5511000000000?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Formação%20Presencial%20Premium."
   }
 ];
 
@@ -156,7 +157,7 @@ function App() {
                   <p className="ed-card-desc">{product.description}</p>
                   <div className="ed-card-footer">
                     <span className="ed-card-price">{product.price}</span>
-                    <a href={product.link} className="btn-card">Adquirir →</a>
+                    <a href={product.link} className="btn-card" target={product.id === 4 ? "_blank" : "_self"}>{product.buttonText || "Adquirir →"}</a>
                   </div>
                 </div>
               </Reveal>
