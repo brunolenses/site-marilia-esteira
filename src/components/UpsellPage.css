@@ -1,0 +1,147 @@
+.upsell-container {
+  background-color: #F7F3EC;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 4rem 0;
+  font-family: "Manrope", sans-serif;
+  color: #242321;
+}
+
+.upsell-header {
+  background-color: #e74c3c;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+.progress-bar {
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 8px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 10px auto;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background-color: #fff;
+  width: 85%;
+  height: 100%;
+}
+
+.upsell-content {
+  max-width: 700px;
+  width: 90%;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.upsell-content h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.5rem;
+  color: #4B2027;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.upsell-content > p {
+  font-size: 1.2rem;
+  color: #242321;
+  margin-bottom: 2rem;
+}
+
+.upsell-product-card {
+  background-color: #fff;
+  border: 1px solid #E8DDD0;
+  padding: 2rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.upsell-product-card img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+}
+
+.upsell-text h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.8rem;
+  color: #7A3038;
+  margin-bottom: 1rem;
+}
+
+.upsell-text p {
+  font-size: 1rem;
+  color: #8C8177;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.upsell-price {
+  font-size: 1.2rem !important;
+  color: #242321 !important;
+  background-color: #F7F3EC;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.cakto-buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+cakto-upsell-accept::part(button) {
+  background-color: #27ae60;
+  color: white;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+  padding: 1.2rem 2rem;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  transition: background-color 0.2s;
+  box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+}
+
+cakto-upsell-accept::part(button):hover {
+  background-color: #219653;
+}
+
+cakto-upsell-reject::part(button) {
+  background-color: transparent;
+  color: #8C8177;
+  text-decoration: underline;
+  font-size: 0.9rem;
+  font-family: "Manrope", sans-serif;
+  border: none;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .upsell-product-card {
+    flex-direction: row;
+    text-align: left;
+    gap: 2rem;
+  }
+  .upsell-product-card img {
+    margin-bottom: 0;
+  }
+}
