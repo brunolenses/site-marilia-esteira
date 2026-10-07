@@ -84,7 +84,7 @@ const products = [
       pill: "FORMAÇÃO PRESENCIAL",
       price: "R$ 1.497,00",
       image: capaEbook3,
-      link: "https://wa.me/5511000000000?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Formação%20Presencial%20Premium."
+      link: "https://wa.me/55159977438347?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Formação%20Presencial%20Premium."
   }
 ];
 
