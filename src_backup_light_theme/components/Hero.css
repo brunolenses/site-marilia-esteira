@@ -1,0 +1,76 @@
+.hero {
+    padding-top: 120px;
+    /* Space for fixed header */
+    padding-bottom: var(--spacing-xl);
+    min-height: 90vh;
+    /* Almost full screen */
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, var(--color-bg) 50%, var(--color-bg-alt) 50%);
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.overline {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-sm);
+    font-weight: 500;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+    font-weight: 400;
+    /* Playfair looks good lighter */
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-md);
+    max-width: 450px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.hero-fixed-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 20px 20px 0px var(--color-primary-dark);
+    /* Stylish offset border */
+    object-fit: cover;
+}
+
+
+@media (min-width: 768px) {
+    .hero-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-content h1 {
+        font-size: 4rem;
+    }
+
+    .hero {
+        background: linear-gradient(to right, var(--color-bg) 60%, var(--color-bg-alt) 60%);
+    }
+}

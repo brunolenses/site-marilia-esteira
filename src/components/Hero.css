@@ -1,0 +1,153 @@
+.hero {
+    padding-top: 140px;
+    /* More space for header */
+    padding-bottom: 2rem;
+    min-height: 95vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-bg);
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 4rem;
+}
+
+/* Content Side */
+.hero-content {
+    z-index: 2;
+    max-width: 650px;
+}
+
+.hero-badge {
+    display: inline-block;
+    background-color: var(--color-bg-alt);
+    color: var(--color-primary-dark);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1.5rem;
+    border-left: 3px solid var(--color-accent-gold);
+    text-transform: uppercase;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    color: var(--color-text);
+    font-weight: 700;
+    /* Bolder like Tassio */
+}
+
+.text-highlight {
+    color: var(--color-accent-gold);
+    /* Replacing Orange with Gold */
+    font-style: italic;
+}
+
+.hero-lead {
+    font-size: 1.25rem;
+    color: var(--color-text-light);
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    border-left: 1px solid #DDD;
+    padding-left: 1.5rem;
+}
+
+/* Buttons */
+.btn-primary-gold {
+    background-color: var(--color-accent-gold);
+    color: white;
+    padding: 1.2rem 2.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 4px;
+    /* Slightly grounded like Tassio's but kept sharp */
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    box-shadow: 0 10px 25px rgba(198, 168, 124, 0.4);
+    /* Gold Glow */
+    border: none;
+}
+
+.btn-primary-gold:hover {
+    transform: translateY(-3px);
+    background-color: #B5966A;
+    /* Darker Gold */
+    color: white;
+}
+
+/* Trust Indicator */
+.hero-trust {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #888;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Image Side */
+.hero-image-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.hero-img-cutout {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    /* Attempting to make the image stand out more like a cutout */
+    filter: drop-shadow(20px 20px 0px #F2EFE9);
+}
+
+/* Responsive */
+@media (min-width: 992px) {
+    .hero-container {
+        grid-template-columns: 1.2fr 1fr;
+        /* More space for text */
+    }
+
+    .hero-content h1 {
+        font-size: 4.5rem;
+        /* Massive Headline */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    .hero-lead {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image-wrapper {
+        order: -1;
+        /* Image first on mobile? Or second? Usually image first for personality brands */
+        margin-bottom: 2rem;
+    }
+
+    .hero-img-cutout {
+        max-width: 350px;
+    }
+}

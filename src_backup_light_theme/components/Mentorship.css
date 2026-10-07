@@ -1,0 +1,116 @@
+.mentorship-section {
+    background-color: #2C2C2C;
+    /* Dark luxury background */
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.mentorship-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+}
+
+.overline-light {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #A89F91;
+    /* Gold/Beige accent */
+    margin-bottom: var(--spacing-sm);
+    font-weight: 500;
+}
+
+.mentorship-content h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.lead {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: #E0E0E0;
+}
+
+.mentorship-details p {
+    color: #CCCCCC;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.mentorship-benefits {
+    list-style: none;
+    margin-bottom: 3rem;
+}
+
+.mentorship-benefits li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    color: #E0E0E0;
+}
+
+.mentorship-benefits li svg {
+    color: #A89F91;
+}
+
+.btn-light {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    background-color: white;
+    color: #2C2C2C;
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-light:hover {
+    background-color: #A89F91;
+    color: white;
+}
+
+.disclaimer {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #888;
+    font-style: italic;
+}
+
+.mentorship-visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.visual-image {
+    width: 100%;
+    max-width: 500px;
+    height: 600px;
+    background-color: #444;
+    /* Darker placeholder */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    position: relative;
+    z-index: 1;
+    border: 1px solid #555;
+}
+
+@media (min-width: 768px) {
+    .mentorship-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -1,0 +1,141 @@
+.about-section {
+    background-color: var(--color-bg);
+    padding: var(--spacing-xl) 0;
+    overflow: visible;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    align-items: center;
+    position: relative;
+}
+
+/* Image Side */
+.about-image-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.about-img-real {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    filter: grayscale(10%) contrast(1.1);
+    /* Editorial Look */
+    box-shadow: -20px 20px 0px rgba(168, 159, 145, 0.2);
+}
+
+.experience-badge {
+    position: absolute;
+    bottom: 40px;
+    left: -30px;
+    background-color: var(--color-accent-gold);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.experience-badge .years {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: var(--font-heading);
+    line-height: 1;
+}
+
+.experience-badge .label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Content Side - The Overlap Box */
+.about-content-box {
+    background-color: white;
+    padding: 4rem;
+    margin-left: -50px;
+    /* The Overlap Magic */
+    z-index: 2;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
+    /* Premium float */
+    border-left: 5px solid var(--color-accent-gold);
+}
+
+.section-subtitle {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    color: var(--color-accent-gold);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.about-content-box h2 {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.about-narrative p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: var(--color-text-light);
+}
+
+.about-list {
+    list-style: none;
+    margin: 2rem 0;
+}
+
+.about-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.list-icon {
+    color: var(--color-accent-gold);
+}
+
+.about-stats-row {
+    display: flex;
+    gap: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #EEE;
+}
+
+.stat strong {
+    display: block;
+    font-size: 2rem;
+    font-family: var(--font-heading);
+    color: var(--color-text);
+}
+
+.stat span {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #999;
+}
+
+@media (max-width: 992px) {
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content-box {
+        margin-left: 0;
+        margin-top: -50px;
+        padding: 2rem;
+    }
+
+    .experience-badge {
+        left: 20px;
+        bottom: 20px;
+    }
+}

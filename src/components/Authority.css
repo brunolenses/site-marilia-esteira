@@ -1,0 +1,48 @@
+.authority-section {
+    background-color: #F5F3F0;
+    /* Soft beige */
+    text-align: center;
+}
+
+.authority-container {
+    display: flex;
+    justify-content: center;
+}
+
+.authority-text-block {
+    max-width: 700px;
+}
+
+.authority-text-block h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    font-family: var(--font-heading);
+}
+
+.divider {
+    width: 60px;
+    height: 2px;
+    background-color: var(--color-primary);
+    margin: 0 auto 2rem auto;
+}
+
+.authority-text-block p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--color-text-light);
+    margin-bottom: 1.5rem;
+}
+
+.authority-text-block strong {
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+.signature {
+    margin-top: 3rem;
+    font-family: 'Playfair Display', serif;
+    /* Use heading font or a script font if added */
+    font-style: italic;
+    font-size: 1.5rem;
+    color: var(--color-primary-dark);
+}
