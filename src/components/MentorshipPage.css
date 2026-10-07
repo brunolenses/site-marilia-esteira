@@ -1,0 +1,164 @@
+.mentorship-container {
+  font-family: 'Manrope', sans-serif;
+  color: #242321;
+  background-color: #F7F3EC;
+}
+
+.mentorship-hero {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  background-color: #4B2027;
+  color: #F7F3EC;
+}
+
+@media(min-width: 768px) {
+  .mentorship-hero {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem 10%;
+  }
+}
+
+.hero-content {
+  flex: 1;
+  margin-bottom: 3rem;
+}
+
+.hero-content h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.btn-primary, .btn-primary-large {
+  display: inline-block;
+  background-color: #B79A72;
+  color: #242321;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover, .btn-primary-large:hover {
+  background-color: #E8DDD0;
+}
+
+.hero-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  object-fit: cover;
+}
+
+.mentorship-about {
+  padding: 5rem 2rem;
+  background-color: #E8DDD0;
+  text-align: center;
+}
+
+.about-text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-text h2, .mentorship-program h2, .mentorship-cta h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  color: #7A3038;
+  margin-bottom: 1.5rem;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.mentorship-program {
+  padding: 5rem 2rem;
+  text-align: center;
+  background-color: #F7F3EC;
+}
+
+.program-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 3rem auto 0;
+}
+
+@media(min-width: 768px) {
+  .program-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.program-card {
+  background-color: #fff;
+  padding: 2.5rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  border-top: 4px solid #7A3038;
+}
+
+.program-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  color: #4B2027;
+  margin-bottom: 1rem;
+}
+
+.program-card p {
+  color: #8C8177;
+  line-height: 1.6;
+}
+
+.mentorship-cta {
+  padding: 6rem 2rem;
+  background-color: #4B2027;
+  color: #F7F3EC;
+  text-align: center;
+}
+
+.mentorship-cta h2 {
+  color: #E8DDD0;
+}
+
+.mentorship-cta p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.price-tag {
+  font-size: 1.5rem !important;
+  font-weight: 600;
+  color: #B79A72;
+  margin-bottom: 3rem !important;
+}
+
+.btn-primary-large {
+  font-size: 1.2rem;
+  padding: 1.2rem 3rem;
+}

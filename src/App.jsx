@@ -79,12 +79,12 @@ const products = [
   {
       id: 4,
       title: "Curso Presencial Premium",
-      buttonText: "Agendar Mentoria →",
+      buttonText: "Saber Mais →",
       description: "Expanda suas técnicas e ofereça diferenciais artísticos na sua região.",
       pill: "FORMAÇÃO PRESENCIAL",
       price: "R$ 1.497,00",
       image: capaEbook3,
-      link: "https://wa.me/5515997438347?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Formação%20Presencial%20Premium."
+      link: "/formacao-presencial"
   }
 ];
 
@@ -157,7 +157,7 @@ function App() {
                   <p className="ed-card-desc">{product.description}</p>
                   <div className="ed-card-footer">
                     <span className="ed-card-price">{product.price}</span>
-                    <a href={product.link} className="btn-card" target={product.id === 4 ? "_blank" : "_self"}>{product.buttonText || "Adquirir →"}</a>
+                    <a href={product.link} className="btn-card" target="_self">{product.buttonText || "Adquirir →"}</a>
                   </div>
                 </div>
               </Reveal>
