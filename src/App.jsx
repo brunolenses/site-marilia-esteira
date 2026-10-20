@@ -54,7 +54,7 @@ const products = [
       title: "Ficha de Anamnese Profissional",
       description: "Eleve o nível do seu atendimento com uma ficha profissional, organizada e pronta para uso.",
       pill: "FERRAMENTA",
-      price: "R$ 9,90",
+      price: "R$ 19,90",
       image: capaAnamnese,
       link: "https://pay.cakto.com.br/a363aqv_1181037"
   },
@@ -191,7 +191,7 @@ function App() {
             <h2>Dúvidas Frequentes</h2>
           </Reveal>
           <Reveal delay={200}>
-            <FaqItem question="Como recebo o acesso?" answer="O acesso a todos os materiais e arquivos em PDF é enviado imediatamente para o seu e-mail logo após a confirmação do pagamento na plataforma Kiwify." />
+            <FaqItem question="Como recebo o acesso?" answer="O acesso a todos os materiais e arquivos em PDF é enviado imediatamente para o seu e-mail logo após a confirmação do pagamento na plataforma Cakto." />
             <FaqItem question="Os e-books podem ser impressos?" answer="Sim. Todos os nossos protocolos, incluindo a Ficha de Anamnese Profissional, possuem qualidade e formatação prontas para impressão." />
             <FaqItem question="Posso personalizar a Ficha de Anamnese?" answer="Sim! A ficha é enviada limpa, sem a nossa logomarca no cabeçalho, com um espaço em branco perfeito para você adicionar o seu próprio logotipo." />
             <FaqItem question="Quais as formas de pagamento?" answer="Você pode adquirir qualquer material no PIX (acesso imediato), Cartão de Crédito ou Boleto Bancário." />
